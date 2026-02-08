@@ -1,0 +1,18 @@
+{"level":"info","message":"Database initialized","timestamp":"2025-10-24T07:44:25.845Z"}
+{"level":"info","message":"Central service running on port 3000","timestamp":"2025-10-24T07:44:25.848Z"}
+{"level":"info","message":"Database initialized","timestamp":"2025-10-24T07:44:31.321Z"}
+{"level":"info","message":"Central service running on port 3000","timestamp":"2025-10-24T07:44:31.326Z"}
+{"level":"info","message":"Database initialized","timestamp":"2025-10-24T08:01:38.404Z"}
+{"level":"info","message":"Central service running on port 3000","timestamp":"2025-10-24T08:01:38.409Z"}
+{"level":"info","message":"Pulled 100 records from http://10.154.193.87:3001","timestamp":"2025-10-24T08:02:04.522Z"}
+{"level":"info","message":"Pulled 100 records from http://10.154.193.87:3002","timestamp":"2025-10-24T08:02:04.873Z"}
+{"level":"info","message":"Pushed 5 records to http://10.154.193.87:3001","timestamp":"2025-10-24T08:02:32.407Z"}
+{"level":"info","message":"Pushed 5 records to http://10.154.193.87:3002","timestamp":"2025-10-24T08:02:32.790Z"}
+{"level":"info","message":"Database initialized","timestamp":"2025-10-24T08:03:41.793Z"}
+{"level":"info","message":"Central service running on port 3000","timestamp":"2025-10-24T08:03:41.798Z"}
+{"level":"info","message":"Database initialized","timestamp":"2025-10-24T09:03:31.255Z"}
+{"level":"info","message":"Central service running on port 3000","timestamp":"2025-10-24T09:03:31.261Z"}
+{"level":"info","message":"Pulled 100 records from http://10.154.193.87:3001","timestamp":"2025-10-24T09:06:03.032Z"}
+{"level":"info","message":"Pulled 100 records from http://10.154.193.87:3002","timestamp":"2025-10-24T09:06:03.366Z"}
+{"level":"info","message":"Pushed 5 records to http://10.154.193.87:3001","timestamp":"2025-10-24T09:06:42.902Z"}
+{"level":"info","message":"Pushed 5 records to http://10.154.193.87:3002","timestamp":"2025-10-24T09:06:43.263Z"}

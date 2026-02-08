@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>BSTU.Results.Authenticate</id>
+    <version>1.0.0</version>
+    <authors>BSTU</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net9.0">
+        <dependency id="Microsoft.AspNetCore.Authentication.JwtBearer" version="6.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.IdentityModel.Tokens.Jwt" version="6.15.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Authenticate\bin\Debug\net9.0\BSTU.Results.Authenticate.dll" target="lib\net9.0\BSTU.Results.Authenticate.dll" />
+  </files>
+</package>

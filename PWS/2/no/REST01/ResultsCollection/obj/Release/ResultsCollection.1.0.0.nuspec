@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ResultsCollection</id>
+    <version>1.0.0</version>
+    <authors>ResultsCollection</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net9.0">
+        <dependency id="Microsoft.Extensions.DependencyInjection.Abstractions" version="9.0.0-preview.7.24405.7" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.3" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Desktop\study_7_sem\PWS\2\REST01\ResultsCollection\bin\Release\net9.0\ResultsCollection.dll" target="lib\net9.0\ResultsCollection.dll" />
+  </files>
+</package>

@@ -1,0 +1,9 @@
+http://localhost:5255/sse-test.html
+либо
+http://localhost:5255/api/sse
+
+
+dotnet new webapi -n JSONRPCServer
+cd JSONRPCServer
+
+dotnet add package StreamJsonRpc

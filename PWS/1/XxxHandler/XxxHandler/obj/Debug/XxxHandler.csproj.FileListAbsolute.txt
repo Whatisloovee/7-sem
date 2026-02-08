@@ -1,0 +1,6 @@
+D:\Desktop\study_7_sem\PWS\1\XxxHandler\XxxHandler\bin\Debug\XxxHandler.dll
+D:\Desktop\study_7_sem\PWS\1\XxxHandler\XxxHandler\bin\Debug\XxxHandler.pdb
+D:\Desktop\study_7_sem\PWS\1\XxxHandler\XxxHandler\obj\Debug\XxxHandler.csproj.AssemblyReference.cache
+D:\Desktop\study_7_sem\PWS\1\XxxHandler\XxxHandler\obj\Debug\XxxHandler.csproj.CoreCompileInputs.cache
+D:\Desktop\study_7_sem\PWS\1\XxxHandler\XxxHandler\obj\Debug\XxxHandler.dll
+D:\Desktop\study_7_sem\PWS\1\XxxHandler\XxxHandler\obj\Debug\XxxHandler.pdb

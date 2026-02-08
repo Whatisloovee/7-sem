@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>BSTU.Results.Collection</id>
+    <version>1.0.0</version>
+    <authors>BSTU</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net9.0">
+        <dependency id="System.Text.Json" version="6.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Collection\bin\Release\net9.0\BSTU.Results.Collection.dll" target="lib\net9.0\BSTU.Results.Collection.dll" />
+  </files>
+</package>

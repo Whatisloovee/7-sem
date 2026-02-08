@@ -1,0 +1,12 @@
+dotnet new grpc -n gRPCServer
+cd gRPCServer
+
+
+----
+
+dotnet new console -n gRPCClient
+cd gRPCClient
+
+dotnet add package Grpc.Net.Client --version 2.66.0
+dotnet add package Google.Protobuf --version 3.27.3
+dotnet add package Grpc.Tools --version 2.66.0

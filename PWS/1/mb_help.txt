@@ -1,0 +1,2 @@
+%windir%\system32\inetsrv\appcmd unlock config -section:system.webServer/handlers
+http://localhost:8080/demo.html

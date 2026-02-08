@@ -1,0 +1,111 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36" version="28.2.3">
+  <diagram name="Страница — 1" id="ZMxLAniWvN0h77m1GyG3">
+    <mxGraphModel dx="1042" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="61N0WE-bRwDJ-mBa-gAU-1" target="61N0WE-bRwDJ-mBa-gAU-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-1" value="начало" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-2" value="конец" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="260" y="780" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="61N0WE-bRwDJ-mBa-gAU-3" target="61N0WE-bRwDJ-mBa-gAU-4" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-3" value="Ввод: Датаначала, ДатаКонца" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="245" y="250" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="61N0WE-bRwDJ-mBa-gAU-4" target="61N0WE-bRwDJ-mBa-gAU-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-4" value="Будние = 0" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="340" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="61N0WE-bRwDJ-mBa-gAU-5" target="61N0WE-bRwDJ-mBa-gAU-6" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-5" value="ПроверяемыйДень = ДатаНачала" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="440" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="61N0WE-bRwDJ-mBa-gAU-6" target="61N0WE-bRwDJ-mBa-gAU-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="440" y="573" />
+              <mxPoint x="440" y="250" />
+              <mxPoint x="680" y="250" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="61N0WE-bRwDJ-mBa-gAU-6" target="61N0WE-bRwDJ-mBa-gAU-10" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="180" y="580" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="210" y="573" />
+              <mxPoint x="210" y="660" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-6" value="ПроверяемыйДень&amp;nbsp;&lt;div&gt;&amp;lt;= ДатаКонца&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="235" y="530" width="170" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="61N0WE-bRwDJ-mBa-gAU-7" target="61N0WE-bRwDJ-mBa-gAU-8" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="61N0WE-bRwDJ-mBa-gAU-7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="540" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="770" y="500" />
+              <mxPoint x="671" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-7" value="ПроверяемыДень&amp;nbsp;&lt;div&gt;будний?&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="590" y="300" width="180" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="61N0WE-bRwDJ-mBa-gAU-8" target="61N0WE-bRwDJ-mBa-gAU-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-8" value="Будние += 1" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="490" y="400" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="JEOCpyfDHFET_1HAtR8w-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="61N0WE-bRwDJ-mBa-gAU-9" target="61N0WE-bRwDJ-mBa-gAU-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="740" y="740" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="810" y="573" />
+              <mxPoint x="810" y="240" />
+              <mxPoint x="420" y="240" />
+              <mxPoint x="420" y="530" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-9" value="ПроверяемыйДень = СледующийДень(ПроверяемыйДень)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="560" y="542.5" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="61N0WE-bRwDJ-mBa-gAU-10" target="61N0WE-bRwDJ-mBa-gAU-2" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-10" value="Вывод: количество&amp;nbsp;&lt;div&gt;будних дней&lt;/div&gt;" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
+          <mxGeometry x="245" y="690" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-24" value="Да" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="395" y="542.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-26" value="Да" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="550" y="320" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-27" value="Нет" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="750" y="318" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="61N0WE-bRwDJ-mBa-gAU-28" value="Нет" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="190" y="542.5" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

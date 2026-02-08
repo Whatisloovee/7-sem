@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 7
+    },
+    "auditLog": "/home/vladikviber/Рабочий стол/RiOS/2-4/1/central-service/logs/.7887cfe62cabba95f5a0146987bbd531b1720a2c-audit.json",
+    "files": [
+        {
+            "date": 1759993304787,
+            "name": "/home/vladikviber/Рабочий стол/RiOS/2-4/1/central-service/logs/telemetry-2025-10-09.log",
+            "hash": "87f0dfee8d610b2b447ac9b1f79f4fe4810ebd59c21cf6f08ae058fe1d844a33"
+        }
+    ],
+    "hashType": "sha256"
+}

@@ -1,0 +1,11 @@
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Collection\bin\Release\net9.0\BSTU.Results.Collection.deps.json
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Collection\bin\Release\net9.0\BSTU.Results.Collection.dll
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Collection\bin\Release\net9.0\BSTU.Results.Collection.pdb
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Collection\obj\Release\net9.0\BSTU.Results.Collection.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Collection\obj\Release\net9.0\BSTU.Results.Collection.AssemblyInfoInputs.cache
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Collection\obj\Release\net9.0\BSTU.Results.Collection.AssemblyInfo.cs
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Collection\obj\Release\net9.0\BSTU.Results.Collection.csproj.CoreCompileInputs.cache
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Collection\obj\Release\net9.0\BSTU.Results.Collection.dll
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Collection\obj\Release\net9.0\refint\BSTU.Results.Collection.dll
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Collection\obj\Release\net9.0\BSTU.Results.Collection.pdb
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Collection\obj\Release\net9.0\ref\BSTU.Results.Collection.dll

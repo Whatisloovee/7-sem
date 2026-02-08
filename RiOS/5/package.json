@@ -1,0 +1,18 @@
+{
+  "name": "ha-time-cluster",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start:mediator": "node dist/mediator/mediator.js",
+    "start:server": "node dist/servers/server.js",
+    "start:client": "node dist/client/client.js",
+    "server:1": "npm run start:server -- 10.154.193.102",
+    "server:2": "npm run start:server -- 10.154.193.87",
+    "server:3": "npm run start:server -- 10.154.193.36"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/node": "^20.10.0"
+  }
+}

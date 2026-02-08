@@ -1,0 +1,133 @@
+<!-- wwwroot/sse-test.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SSE Test Client</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .client { border: 1px solid #ccc; padding: 15px; margin: 10px 0; }
+        .events { height: 200px; overflow-y: auto; border: 1px solid #ddd; padding: 10px; background: #f9f9f9; }
+        .event { margin: 5px 0; padding: 5px; border-left: 3px solid #007acc; }
+        .error { border-left-color: #d13438; background: #fdf2f2; }
+        .success { border-left-color: #107c10; background: #f2fbf2; }
+        .info { border-left-color: #007acc; background: #f2f8fd; }
+    </style>
+</head>
+<body>
+    <h1>SSE Test Clients</h1>
+    <button onclick="addClient()">Add SSE Client</button>
+    <button onclick="removeAllClients()">Remove All Clients</button>
+    
+    <div id="clients"></div>
+
+    <script>
+        let clients = [];
+        
+        function addClient() {
+            const clientId = `client-${Date.now()}`;
+            const client = { id: clientId, events: [] };
+            clients.push(client);
+            
+            const clientDiv = document.createElement('div');
+            clientDiv.id = clientId;
+            clientDiv.className = 'client';
+            clientDiv.innerHTML = `
+                <h3>SSE Client ${clients.length}</h3>
+                <div class="events" id="events-${clientId}"></div>
+                <button onclick="removeClient('${clientId}')">Remove</button>
+            `;
+            
+            document.getElementById('clients').appendChild(clientDiv);
+            
+            connectSSE(clientId);
+        }
+        
+        function removeClient(clientId) {
+            const client = clients.find(c => c.id === clientId);
+            if (client && client.eventSource) {
+                client.eventSource.close();
+            }
+            clients = clients.filter(c => c.id !== clientId);
+            document.getElementById(clientId)?.remove();
+        }
+        
+        function removeAllClients() {
+            clients.forEach(client => {
+                if (client.eventSource) {
+                    client.eventSource.close();
+                }
+            });
+            clients = [];
+            document.getElementById('clients').innerHTML = '';
+        }
+        
+        function connectSSE(clientId) {
+            const eventsDiv = document.getElementById(`events-${clientId}`);
+            const client = clients.find(c => c.id === clientId);
+            
+            const eventSource = new EventSource('/api/sse');
+            client.eventSource = eventSource;
+            
+            eventSource.onopen = function() {
+                addEvent(eventsDiv, 'Connection established', 'info');
+            };
+            
+            eventSource.onerror = function(e) {
+                addEvent(eventsDiv, 'Connection error', 'error');
+                console.error('SSE Error:', e);
+            };
+            
+            eventSource.addEventListener('connected', function(e) {
+                const data = JSON.parse(e.data);
+                addEvent(eventsDiv, `${data.message}`, 'success');
+            });
+            
+            eventSource.addEventListener('ping', function(e) {
+            });
+            
+            eventSource.addEventListener('SUM', function(e) {
+                const data = JSON.parse(e.data);
+                addEvent(eventsDiv, `SUM operation: result = ${data.result}`, 'success');
+            });
+            
+            eventSource.addEventListener('SUB', function(e) {
+                const data = JSON.parse(e.data);
+                addEvent(eventsDiv, `SUB operation: result = ${data.result}`, 'success');
+            });
+            
+            eventSource.addEventListener('MUL', function(e) {
+                const data = JSON.parse(e.data);
+                addEvent(eventsDiv, `MUL operation: result = ${data.result}`, 'success');
+            });
+            
+            eventSource.addEventListener('DIV', function(e) {
+                const data = JSON.parse(e.data);
+                if (data.error) {
+                    addEvent(eventsDiv, `DIV operation: ${data.error}`, 'error');
+                } else {
+                    addEvent(eventsDiv, `DIV operation: result = ${data.result}`, 'success');
+                }
+            });
+            
+            eventSource.addEventListener('FACT', function(e) {
+                const data = JSON.parse(e.data);
+                if (data.error) {
+                    addEvent(eventsDiv, `FACT operation: ${data.error}`, 'error');
+                } else {
+                    addEvent(eventsDiv, `FACT operation: result = ${data.result}`, 'success');
+                }
+            });
+        }
+        
+        function addEvent(container, message, type) {
+            const eventDiv = document.createElement('div');
+            eventDiv.className = `event ${type}`;
+            eventDiv.textContent = `[${new Date().toLocaleTimeString()}] ${message}`;
+            container.appendChild(eventDiv);
+            container.scrollTop = container.scrollHeight;
+        }
+        
+        window.onload = addClient;
+    </script>
+</body>
+</html>

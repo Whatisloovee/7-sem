@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>ResultsCollection</id>
+    <version>1.0.0</version>
+    <authors>YourName</authors>
+    <description>Results collection service</description>
+  </metadata>
+</package>

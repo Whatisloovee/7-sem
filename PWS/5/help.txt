@@ -1,0 +1,12 @@
+dotnet new webapi -n SIGNALRServer
+cd SIGNALRServer
+
+dotnet add package Microsoft.AspNetCore.SignalR
+---------------------
+
+dotnet new console -n SignalRClient
+cd SignalRClient
+dotnet add package Microsoft.AspNetCore.SignalR.Client
+
+
+---https://localhost:5001/index.html

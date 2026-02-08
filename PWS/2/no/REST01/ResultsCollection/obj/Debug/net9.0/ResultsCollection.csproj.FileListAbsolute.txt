@@ -1,0 +1,12 @@
+D:\Desktop\study_7_sem\PWS\2\REST01\ResultsCollection\bin\Debug\net9.0\ResultsCollection.deps.json
+D:\Desktop\study_7_sem\PWS\2\REST01\ResultsCollection\bin\Debug\net9.0\ResultsCollection.dll
+D:\Desktop\study_7_sem\PWS\2\REST01\ResultsCollection\bin\Debug\net9.0\ResultsCollection.pdb
+D:\Desktop\study_7_sem\PWS\2\REST01\ResultsCollection\obj\Debug\net9.0\ResultsCollection.csproj.AssemblyReference.cache
+D:\Desktop\study_7_sem\PWS\2\REST01\ResultsCollection\obj\Debug\net9.0\ResultsCollection.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\study_7_sem\PWS\2\REST01\ResultsCollection\obj\Debug\net9.0\ResultsCollection.AssemblyInfoInputs.cache
+D:\Desktop\study_7_sem\PWS\2\REST01\ResultsCollection\obj\Debug\net9.0\ResultsCollection.AssemblyInfo.cs
+D:\Desktop\study_7_sem\PWS\2\REST01\ResultsCollection\obj\Debug\net9.0\ResultsCollection.csproj.CoreCompileInputs.cache
+D:\Desktop\study_7_sem\PWS\2\REST01\ResultsCollection\obj\Debug\net9.0\ResultsCollection.dll
+D:\Desktop\study_7_sem\PWS\2\REST01\ResultsCollection\obj\Debug\net9.0\refint\ResultsCollection.dll
+D:\Desktop\study_7_sem\PWS\2\REST01\ResultsCollection\obj\Debug\net9.0\ResultsCollection.pdb
+D:\Desktop\study_7_sem\PWS\2\REST01\ResultsCollection\obj\Debug\net9.0\ref\ResultsCollection.dll

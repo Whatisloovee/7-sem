@@ -1,0 +1,12 @@
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Authenticate\bin\Debug\net9.0\BSTU.Results.Authenticate.deps.json
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Authenticate\bin\Debug\net9.0\BSTU.Results.Authenticate.dll
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Authenticate\bin\Debug\net9.0\BSTU.Results.Authenticate.pdb
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Authenticate\obj\Debug\net9.0\BSTU.Results.Authenticate.csproj.AssemblyReference.cache
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Authenticate\obj\Debug\net9.0\BSTU.Results.Authenticate.GeneratedMSBuildEditorConfig.editorconfig
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Authenticate\obj\Debug\net9.0\BSTU.Results.Authenticate.AssemblyInfoInputs.cache
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Authenticate\obj\Debug\net9.0\BSTU.Results.Authenticate.AssemblyInfo.cs
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Authenticate\obj\Debug\net9.0\BSTU.Results.Authenticate.csproj.CoreCompileInputs.cache
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Authenticate\obj\Debug\net9.0\BSTU.Results.Authenticate.dll
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Authenticate\obj\Debug\net9.0\refint\BSTU.Results.Authenticate.dll
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Authenticate\obj\Debug\net9.0\BSTU.Results.Authenticate.pdb
+D:\Desktop\study_7_sem\PWS\2\BSTU\BSTU.Results.Authenticate\obj\Debug\net9.0\ref\BSTU.Results.Authenticate.dll

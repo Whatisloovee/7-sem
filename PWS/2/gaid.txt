@@ -1,0 +1,163 @@
+Структура проекта
+BSTU\
+├── REST01\                    # Основное приложение
+│   ├── REST01.csproj
+│   ├── Program.cs
+│   ├── appsettings.json
+│   └── Controllers\
+│       └── ResultsController.cs
+├── BSTU.Results.Collection\   # Библиотека для работы с коллекцией
+│   ├── BSTU.Results.Collection.csproj
+│   └── Services\
+│       └── ResultsCollection.cs
+├── BSTU.Results.Authenticate\ # Библиотека для аутентификации
+│   ├── BSTU.Results.Authenticate.csproj
+│   └── Services\
+│       └── AuthenticateService.cs
+└── nupkgs\                   # Локальный NuGet репозиторий
+
+cd C:\...\BSTU
+
+# Создаем решение
+dotnet new sln -n BSTU.Results
+
+# Создаем основные проекты
+dotnet new webapi -n REST01
+dotnet new classlib -n BSTU.Results.Collection
+dotnet new classlib -n BSTU.Results.Authenticate
+
+# Добавляем проекты в решение
+dotnet sln add REST01\REST01.csproj
+dotnet sln add BSTU.Results.Collection\BSTU.Results.Collection.csproj
+dotnet sln add BSTU.Results.Authenticate\BSTU.Results.Authenticate.csproj
+
+
+
+
+//BSTU.Results.Collection.csproj
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+<!-- ВКЛЮЧАЕМ ГЕНЕРАЦИЮ ПАКЕТА -->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>BSTU.Results.Collection</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>BSTU</Authors>
+    <Company>BSTU</Company>
+<!-- ВОТ ТУТ УКАЗАН ПУТЬ ПУБЛИКАЦИИ -->
+    <PackageOutputPath>..\nupkgs</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>
+
+
+
+//BSTU.Results.Authenticate.csproj
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+<!-- ВКЛЮЧАЕМ ГЕНЕРАЦИЮ ПАКЕТА -->
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>BSTU.Results.Authenticate</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>BSTU</Authors>
+    <Company>BSTU</Company>
+<!-- ВОТ ТУТ УКАЗАН ПУТЬ ПУБЛИКАЦИИ -->
+    <PackageOutputPath>..\nupkgs</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.15.0" />
+  </ItemGroup>
+
+</Project>
+
+
+
+//REST01\appsettings.json
+{
+  "Jwt": {
+    "Key": "YourSuperSecretKeyForJWTTokenGeneration12345ThatIsAtLeast32CharactersLong",
+    "Issuer": "BSTU.Results",
+    "Audience": "ResultsAPIUsers"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*"
+}
+
+
+//REST01\REST01.csproj
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.0" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.15.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BSTU.Results.Collection" Version="1.0.0" />
+    <PackageReference Include="BSTU.Results.Authenticate" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
+
+
+
+
+# Создаем папку для NuGet пакетов
+mkdir nupkgs
+
+# Собираем и создаем пакеты - если будет конфигурация как выше то они автоматически создадуться
+dotnet build BSTU.Results.Collection\BSTU.Results.Collection.csproj --configuration Release
+dotnet build BSTU.Results.Authenticate\BSTU.Results.Authenticate.csproj --configuration Release
+
+# Собираем основное приложение
+dotnet build REST01\REST01.csproj --configuration Release
+
+
+cd REST01
+dotnet run #запуск приложения
+
+
+
+
+
+________ВТОРОЙ ВАРИАНТ ПУБЛИКАЦИИ_______
+//добавляем локальную папку в реестр репозиториев nuget
+dotnet nuget add source C:\...\nupkgs --name LocalBSTUPackages
+
+cd BSTU.Results.Collection, cd BSTU.Results.Authenticate
+и в каждой папке выполнить это
+dotnet pack --output ..\nupkgs --configuration Release
+
+и можно убрать из файлов BSTU.Results.Collection.csproj, BSTU.Results.Authenticate.csproj эти строки
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageOutputPath>..\nupkgs</PackageOutputPath>
+
+
+
+
+

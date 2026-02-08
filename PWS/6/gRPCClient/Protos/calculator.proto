@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+option csharp_namespace = "GRPCServer.Protos";
+
+service Calculator {
+  rpc Sum (CalcRequest) returns (CalcResponse);
+  rpc Sub (CalcRequest) returns (CalcResponse);
+  rpc Mul (CalcRequest) returns (CalcResponse);
+  rpc Div (CalcRequest) returns (CalcResponse);
+  rpc Fact (FactRequest) returns (FactResponse);
+}
+
+message CalcRequest {
+  double x = 1;
+  double y = 2;
+}
+
+message CalcResponse {
+  double result = 1;
+}
+
+message FactRequest {
+  int32 x = 1;
+}
+
+message FactResponse {
+  int32 result = 1;
+}
